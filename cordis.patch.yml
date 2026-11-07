@@ -1,0 +1,3 @@
+- insert:
+    - id: sidebar-entries-toggle
+      name: 'dsh-sidebar-entries-toggle'

@@ -1,0 +1,25 @@
+# --- dependencies ---
+node_modules/
+
+# --- local scratch / machine-specific ---
+*.local.*
+sync.local.sh
+.dsh-tmp/
+*.log
+
+# --- packaging output ---
+*.tgz
+
+# --- secrets / machine config ---
+.npmrc
+.env*
+*.bak
+
+# --- editor / OS noise ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+__pycache__/
+*.pyc

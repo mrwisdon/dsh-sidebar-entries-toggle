@@ -1,0 +1,67 @@
+{
+  "name": "dsh-sidebar-entries-toggle",
+  "version": "0.4.0",
+  "manifestVersion": 1,
+  "type": "module",
+  "main": "./index.js",
+  "description": "DSH sidebar plugin: collapse the plugin entries, drag the divider to rebalance entries against the workspace list, and jump to any workspace or session from a filterable picker.",
+  "license": "MIT",
+  "author": "mrwisdon",
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "sidebar",
+    "collapse",
+    "resizer",
+    "workspace",
+    "session-picker"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrwisdon/dsh-sidebar-entries-toggle.git"
+  },
+  "homepage": "https://github.com/mrwisdon/dsh-sidebar-entries-toggle#readme",
+  "bugs": {
+    "url": "https://github.com/mrwisdon/dsh-sidebar-entries-toggle/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.zh.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "docs"
+  ],
+  "meta": {
+    "title": "Sidebar entries toggle",
+    "description": "Collapse the plugin entries, drag the divider to rebalance the sidebar, and pick a workspace or session from the header."
+  },
+  "icon": "./icon.svg",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  }
+}
