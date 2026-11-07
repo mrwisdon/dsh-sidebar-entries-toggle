@@ -1,6 +1,7 @@
 # dsh-sidebar-entries-toggle
 
 [![dsh](https://img.shields.io/badge/DSH-web%20client%20plugin-7C8CF8)](#compatibility-and-limits)
+[![check](https://github.com/mrwisdon/dsh-sidebar-entries-toggle/actions/workflows/check.yml/badge.svg)](https://github.com/mrwisdon/dsh-sidebar-entries-toggle/actions/workflows/check.yml)
 [![build](https://img.shields.io/badge/build-none%20(plain%20JS)-brightgreen)](#development)
 [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
@@ -340,6 +341,7 @@ Try a change with the local `link:` install (Option B):
 | `docs/ARCHITECTURE.md` | 162 | internals: lifecycle, subsystems, failure modes, line references |
 | `CHANGELOG.md` | 34 | release notes |
 | `LICENSE` | 21 | MIT |
+| `.github/workflows/check.yml` | 23 | CI: syntax, manifest wiring, packaging dry run |
 
 ## License
 

@@ -1,6 +1,7 @@
 # dsh-sidebar-entries-toggle
 
 [![dsh](https://img.shields.io/badge/DSH-web%20client%20plugin-7C8CF8)](#兼容性与边界)
+[![check](https://github.com/mrwisdon/dsh-sidebar-entries-toggle/actions/workflows/check.yml/badge.svg)](https://github.com/mrwisdon/dsh-sidebar-entries-toggle/actions/workflows/check.yml)
 [![build](https://img.shields.io/badge/build-none%20(plain%20JS)-brightgreen)](#开发)
 [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
@@ -305,6 +306,7 @@ factory 体在**物化时**执行，而不是脚本执行时：CSS 注入、DOM 
 | `docs/ARCHITECTURE.md` | 162 | 内部实现：生命周期、子系统、失效模式、行号引用 |
 | `CHANGELOG.md` | 34 | 版本记录 |
 | `LICENSE` | 21 | MIT |
+| `.github/workflows/check.yml` | 23 | CI：语法、manifest 接线、打包试运行 |
 
 ## 许可
 
