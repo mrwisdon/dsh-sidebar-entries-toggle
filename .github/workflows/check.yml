@@ -1,0 +1,23 @@
+name: check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Syntax check (client.js is the shipped source)
+        run: node --check client.js
+      - name: package.json parses
+        run: node -e "JSON.parse(require('fs').readFileSync('package.json','utf8')); console.log('package.json ok')"
+      - name: Bundle patch points at a real file
+        run: node -e "const p=require('./package.json'); const fs=require('fs'); const f=p.dsh.bundle.patch.replace('./',''); if(!fs.existsSync(f)) throw new Error('missing '+f); console.log('patch ok:', f)"
+      - name: Packaging dry run
+        run: npm pack --dry-run
